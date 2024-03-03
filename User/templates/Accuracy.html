@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+<head>
+<title>Medical Social Media</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="6" color="white">Medical Text Classification based on Improved Capsule Network</font></center>
+		</div>
+		
+	</div>
+	<div id="menu">
+		<ul><center>
+        <li><a href="{% url 'Viewusers' %}">View Users</a></li>
+	    <li><a href="{% url 'Viewposts' %}">View Posts</a></li>
+		<li><a href="{% url 'Accuracy' %}">Accuracy Result</a></li>
+       <li><a href="{% url 'index' %}">Logout</a></li>
+			
+		</center></ul>
+		<br class="clearfix" />
+	</div>
+	
+		<div id="splash">
+		<img class="pic" src="{% static 'images/investor.jpg' %}" width="870" height="230" alt="" />
+	</div>	
+	
+	
+	<center>
+   <table border=1 align center><tr><th>Result</th><th>Accuracy Score</th><th>Precision Score</th><th>Recall Score</th><th>F1 Score</th></tr>
+   <tr><td><font size="" color="black">CNN</td><td><font size="" color="black">99.6</td><td><font size="" color="black">99.6</td><td><font size="" color="black">99.6</td><td><font size="" color="black">99.6</td></tr>
+      <tr><td><font size="" color="black">SVM</td><td><font size="" color="black">98</td><td><font size="" color="black">98</td><td><font size="" color="black">98</td><td><font size="" color="black">98</td></tr>
+    
+
+
+
+</body>
+</html>
